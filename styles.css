@@ -1,0 +1,132 @@
+* {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  width: 375px;
+  background-color: hsl(216, 12%, 8%);
+  margin: 0 auto;
+}
+body main {
+  height: 100vh;
+}
+body article {
+  background-color: hsl(213, 19%, 18%);
+  margin: 50% auto;
+  width: 21rem;
+  height: 22rem;
+  border-radius: 1rem 1rem;
+  padding: 2rem 1rem;
+}
+body article h1, body article p, body article button {
+  color: hsl(0, 0%, 100%);
+}
+body article p {
+  color: hsl(217, 12%, 63%);
+}
+body article .svg-circle {
+  border-radius: 50% 50%;
+  height: 2rem;
+  width: 2rem;
+  background-color: hsl(217, 5%, 32%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body article .rating {
+  border-radius: 50% 50%;
+  height: 2.5rem;
+  width: 2.4rem;
+  border: none;
+  margin: 0.6rem 0.6rem;
+  background-color: hsl(217, 5%, 32%);
+}
+body article .submit-button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 2rem 2rem;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+body .thankyou-state {
+  text-align: center;
+}
+body .thankyou-state .rate-box {
+  width: 12rem;
+  height: 2rem;
+  border: 1px solid white;
+  margin: 1rem auto;
+  border-radius: 1rem 1rem;
+  border: none;
+  background-color: hsl(217, 5%, 32%);
+}
+body .thankyou-state .rate-box p {
+  color: hsl(25, 97%, 53%);
+  position: relative;
+  bottom: 0.5rem;
+}
+body .thankyou-state h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.rating:active {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.submit-button:active {
+  background-color: hsl(217, 5%, 32%);
+}
+
+button:focus {
+  background-color: hsl(25, 97%, 53%);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    width: 600px;
+  }
+  body .rating-state {
+    width: 26rem;
+    height: 26rem;
+    padding: 1rem 2rem;
+    margin: 32% auto;
+  }
+  body .rating-state h1 {
+    font-size: 1.8rem;
+    margin-top: 2.7rem;
+  }
+  body .rating-state p {
+    line-height: 1.5rem;
+  }
+  body .rating-state .rating {
+    height: 3rem;
+    width: 3rem;
+  }
+  body .thankyou-state {
+    width: 26rem;
+    height: 26rem;
+    padding: 1rem 2rem;
+    margin: 32% auto;
+  }
+  body .thankyou-state .rate-box {
+    margin-top: 2rem;
+  }
+  body .thankyou-state .rate-box p {
+    font-size: 1.05rem;
+  }
+  body .thankyou-state h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+  }
+  body .thankyou-state .vote-of-Thanks {
+    line-height: 1.8rem;
+    font-size: 1.05rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

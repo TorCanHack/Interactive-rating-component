@@ -1,0 +1,174 @@
+$primaryOrange: hsl(25, 97%, 53%);
+$cocaine: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(217, 5%, 32%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+$mainFont: "Overpass";
+ 
+* {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    width: 375px;
+    background-color: $veryDarkBlue;
+    margin: 0 auto;
+
+    main {
+        height: 100vh;
+    }
+
+  
+
+    article {
+        background-color: $darkBlue;
+        margin: 50% auto;
+        width: 21rem;
+        height: 22rem;
+        border-radius: 1rem 1rem;
+        padding: 2rem 1rem;
+
+        h1, p, button {
+            color: $cocaine;
+        }
+
+        p {
+            color: $lightGrey;
+        }
+
+        .svg-circle{
+            border-radius: 50% 50%;
+            height: 2rem;
+            width: 2rem;
+            background-color: $mediumGrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+
+        .rating {
+            border-radius: 50% 50%;
+            height: 2.5rem;
+            width: 2.4rem;
+            border: none;
+            margin: 0.6rem 0.6rem;
+            background-color: $mediumGrey;
+            
+        }
+
+
+        .submit-button {
+            width: 100%;
+            height: 3rem;
+            border-radius: 2rem 2rem;
+            border: none;
+            background-color: $primaryOrange;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+    }
+
+    .thankyou-state {
+        text-align: center;
+
+        .rate-box {
+            width: 12rem;
+            height: 2rem;
+            border: 1px solid white;
+            margin: 1rem auto;
+            border-radius: 1rem 1rem;
+            border: none;
+            background-color: hsl(217, 5%, 32%);
+            
+           
+            
+            
+
+            p {
+                color: $primaryOrange;
+                position: relative;
+                bottom: .5rem;
+            }
+        }
+
+        h2 {
+            color: $cocaine;
+            
+        }
+    }
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+.rating:active {
+    background-color: $primaryOrange;
+}
+
+.submit-button:active {
+    background-color: $mediumGrey;
+}
+
+button:focus {
+    background-color: $primaryOrange;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+
+    width: 600px;
+
+    .rating-state {
+        width: 26rem;
+        height: 26rem;
+        padding: 1rem 2rem;
+        margin: 32% auto;
+
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 2.7rem;
+        }
+
+        p {
+            line-height: 1.5rem;
+        }
+
+        .rating {
+            height: 3rem;
+            width: 3rem;
+            
+        }
+    }
+
+    .thankyou-state {
+        width: 26rem;
+        height: 26rem;
+        padding: 1rem 2rem;
+        margin: 32% auto;
+
+        .rate-box {
+            margin-top: 2rem;
+
+            p {
+                font-size: 1.05rem;
+            }
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+        }
+
+        .vote-of-Thanks {
+            line-height: 1.8rem;
+            font-size: 1.05rem;
+        }
+    }
+    
+  }
+}
